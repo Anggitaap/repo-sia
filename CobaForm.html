@@ -1,0 +1,21 @@
+<html>
+<head> <title> Coba Form </title>
+</head>
+<body>
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="post">
+Nama: <input type="text" name="nama" />
+Alamat: <input type="text" name="alamat" />
+<input type="submit" value="Kirim Pesan" />
+</form>
+
+<?php
+    if ($_GET) {
+        echo "Nama: " . $_GET["nama"];
+        echo "<br/>";
+        echo "Alamat: " . $_GET["alamat"];
+    }
+    ?>
+
+
+</body>
+</html>
